@@ -1,0 +1,16 @@
+:root {
+  --backgounrd: #000;
+  --orange: #e7490f;
+  --white: #fff;
+  --gray: #ececec;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 111rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
