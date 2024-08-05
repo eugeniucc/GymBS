@@ -1,6 +1,7 @@
 // COLORS
 :root {
   --backgounrd: #000;
+  --background-white: #f6f6f6;
   --orange: #e7490f;
   --white: #fff;
   --gray: #ececec;
@@ -12,10 +13,9 @@ $base-font-size: 10px;
 
 // MEDIA BREAKPOINTS
 
-$breakpoint-xxl: 1400px;
-$breakpoint-xl: 1200px;
-$breakpoint-lg: 1024px;
-$breakpoint-md: 820px;
-$breakpoint-smL: 425px;
-$breakpoint-smM: 375px;
-$breakpoint-smS: 320px;
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

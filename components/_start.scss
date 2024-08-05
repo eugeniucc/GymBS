@@ -1,0 +1,41 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.start {
+  padding: 12rem 0rem;
+  background-color: var(--backgounrd);
+  &_wrapper {
+    gap: 1rem;
+    &-descr {
+      @include section-descr-orange;
+    }
+    &-title {
+      @include section-title-white;
+    }
+    &-text {
+      margin-top: 2rem;
+      @include p-18-white-normal;
+    }
+  }
+  &_content {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 33.4rem;
+      height: 33.4rem;
+      z-index: 0;
+      border-radius: 50%;
+      background: rgba(231, 73, 15, 0.4);
+      filter: blur(115px);
+    }
+  }
+  &_img {
+    max-width: 100%;
+    position: inherit;
+    z-index: 2;
+    width: 100%;
+  }
+}

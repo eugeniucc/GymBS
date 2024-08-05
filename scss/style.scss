@@ -1,7 +1,16 @@
 // COMPONENTS
 @import "../components/header";
+@import "../components/banner";
+@import "../components/popup";
+@import "../components/start";
+@import "../components/adv";
 
 // MEDIA QUERIES COMPONENTS
+@import "../media-queries/media-header";
+@import "../media-queries/media-banner";
+@import "../media-queries/media-popup";
+@import "../media-queries/media-start";
+@import "../media-queries/media-adv";
 
 // MIXINS
 @import "../scss/mixins/mixins";
@@ -9,9 +18,24 @@
 // VARIABLES
 @import "../scss/variables/variables";
 
-// FONTS
+// ANIMATIONS
+@import "../scss/animations/hover";
 
 // HTML
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+span,
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
 
 html {
   font-size: $base-font-size;

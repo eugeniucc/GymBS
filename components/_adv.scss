@@ -1,0 +1,62 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.adv {
+  padding: 12rem 0rem;
+  background-color: var(--background-whiter);
+  &_content {
+    margin-bottom: 6rem;
+    &-descr {
+      @include section-descr-orange;
+    }
+    &-title {
+      @include section-title-black;
+    }
+  }
+  &_wrapper {
+    &-card {
+      &--title {
+        @include p-28-black-bold;
+      }
+      &--text {
+        @include p-16-black-normal;
+      }
+      &--box {
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      &--img {
+        max-width: 100%;
+        width: 100%;
+      }
+      &--number {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 12.8rem;
+        height: 12.8rem;
+        background-color: var(--white);
+        z-index: 2;
+        &-text {
+          @include card-number;
+        }
+      }
+      &--bg {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(231, 73, 15, 0.5);
+        z-index: 1;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          height: 0rem;
+        }
+      }
+    }
+  }
+}

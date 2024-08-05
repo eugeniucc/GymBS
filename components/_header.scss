@@ -1,0 +1,58 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/hover";
+
+.header {
+  padding: 3.5rem 0rem;
+  background-color: var(--backgounrd);
+  &_social {
+    gap: 1.8rem;
+  }
+  &_social {
+    &-map {
+      gap: 0.5rem;
+      @include p-18-white-normal;
+      svg path {
+        transition: all 0.3s ease-in-out;
+      }
+      @include nav-hover-svg;
+    }
+    &-inst {
+      gap: 1rem;
+      max-width: 17rem;
+      width: 100%;
+      @include p-16-white-normal;
+      svg path {
+        transition: all 0.3s ease-in-out;
+      }
+      @include nav-hover-svg;
+    }
+  }
+  &_contacts {
+    gap: 2.3rem;
+    &-wrapper {
+      gap: 3rem;
+    }
+    &-link {
+      @include p-24-white-bold;
+      justify-content: center;
+      @include nav-hover-svg;
+      svg path {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  &_nav {
+    &-list {
+      gap: 2rem;
+      &--link {
+        @include p-16-white-normal;
+        @include nav-hover;
+      }
+    }
+  }
+  &_subscribe {
+    @include header-btn;
+    padding: 1.2rem 3.3rem;
+  }
+}

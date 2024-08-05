@@ -1,0 +1,49 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.banner {
+  &_wrapper {
+    height: 62.5rem;
+    max-width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+  &_overlay {
+    position: absolute;
+    background-color: var(--white);
+    content: "";
+    top: 0;
+    right: 0;
+    height: inherit;
+    width: 60%;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    gap: 3rem;
+    transition: all 0.5s ease-in-out;
+    &-title {
+      @include banner-title;
+      max-width: 46.5rem;
+      width: 100%;
+    }
+    &-text {
+      @include p-18-white-normal;
+      color: var(--black);
+      max-width: 46.5rem;
+      width: 100%;
+    }
+  }
+}
+
+.banner_overlay.active {
+  transform: translateX(0%);
+}

@@ -1,0 +1,108 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+@import "../scss/animations/hover";
+
+.popup {
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 54rem;
+  width: 100%;
+  &_overlay {
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  &_content {
+    height: 40rem;
+    background: lightgray 50% / cover no-repeat;
+    &-close {
+      width: 4.4rem;
+      height: 4.4rem;
+      margin: 2rem 2rem 0rem 0rem;
+      border: none;
+      border-radius: 50%;
+      background: rgba(246, 246, 246, 0.5);
+    }
+  }
+  &_wrapper {
+    padding: 3rem 5rem;
+    background-color: #fff;
+    gap: 2rem;
+    &-name,
+    &-phone {
+      gap: 2rem;
+      @include p-16-black-normal;
+    }
+    &-name {
+      &--input {
+        outline: none;
+        border: 0.1rem solid #757575;
+        padding: 2rem;
+      }
+    }
+    &-send {
+      gap: 1.5rem;
+      &--btn {
+        max-width: 100%;
+        width: 100%;
+        padding: 2rem 0rem;
+        @include header-btn;
+      }
+      &--text {
+        @include p-16-black-normal;
+      }
+    }
+  }
+}
+
+// INTL IPUT RESET STYLES
+
+.iti {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.iti__tel-input {
+  border: 0.1rem solid #757575;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 2rem;
+}
+.iti__tel-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.iti__search-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.iti__tel-input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+// fix rotation of arrow
+
+.iti__arrow.iti__arrow--up {
+  transform: rotate(180deg);
+}
+
+.popup.active {
+  opacity: 1;
+  z-index: 2;
+}
+.popup_overlay.active {
+  opacity: 1;
+  z-index: 1;
+}

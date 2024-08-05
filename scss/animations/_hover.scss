@@ -1,0 +1,26 @@
+@mixin nav-hover-svg {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--orange);
+  }
+  &:hover svg path {
+    fill: var(--orange);
+  }
+}
+@mixin nav-hover {
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--orange);
+  }
+}
+@mixin header-btn {
+  @include header-btn-text;
+  border: 0.1rem solid var(--orange);
+  background-color: var(--orange);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    border: 0.1rem solid var(--orange);
+  }
+}
