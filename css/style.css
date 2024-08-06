@@ -226,6 +226,14 @@
 .popup_wrapper-name, .popup_wrapper-phone {
   gap: 2rem;
 }
+.popup_wrapper-name--text, .popup_wrapper-phone--text {
+  color: var(--black);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .popup_wrapper-name--input, .popup_wrapper-name--tel {
   outline: none;
   border: 0.1rem solid #757575;
@@ -240,6 +248,14 @@
 .popup_wrapper-name--input:focus, .popup_wrapper-name--tel:focus {
   border: 0.1rem solid #757575;
   box-shadow: none;
+}
+.popup_wrapper-name--text {
+  color: var(--black);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .popup_wrapper-send {
   gap: 1.5rem;
