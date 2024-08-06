@@ -81,7 +81,7 @@
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/js/intlTelInput.min.js"></script>
     <script defer src="./js/form-validation.js"></script>
     <!-- MY SCRIPTS -->
-    <script defer src="./js/banner.js"></script>
+    <script defer src="./js/banner-cards.js"></script>
     <script defer src="./js/popup-form.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
@@ -105,7 +105,7 @@
             <div class="header_social d-flex flex-column">
               <a
                 class="header_social-map d-flex align-items-center"
-                href="#"
+                href="https://maps.app.goo.gl/KxyTr15vnrXXYoMc7"
                 target="_blank"
               >
                 <span
@@ -346,7 +346,7 @@
       </section>
     </main>
     <footer class="footer" style="padding: 15rem 0rem"></footer>
-    <form action="#" class="popup">
+    <form action="#" class="popup needs-validation" novalidate>
       <div
         class="popup_content d-flex justify-content-end"
         style="background-image: url(../../img/popup.png)"
@@ -390,15 +390,21 @@
         <div class="popup_wrapper-name d-flex flex-column">
           <p class="popup_wrapper-name--text">Имя</p>
           <input
-            class="popup_wrapper-name--input"
+            class="popup_wrapper-name--input form-control"
             type="text"
             placeholder="Например Алина"
             id="name"
+            required
           />
         </div>
         <div class="popup_wrapper-phone d-flex flex-column">
           <p class="popup_wrapper-phone--text">Номер телефона</p>
-          <input class="iti__tel-input" id="phone" type="tel" />
+          <input
+            class="iti__tel-input form-control popup_wrapper-name--tel"
+            id="phone"
+            type="tel"
+            required
+          />
         </div>
         <div class="popup_wrapper-send d-flex flex-column align-items-center">
           <button class="popup_wrapper-send--btn" type="submit">

@@ -225,6 +225,11 @@
 }
 .popup_wrapper-name, .popup_wrapper-phone {
   gap: 2rem;
+}
+.popup_wrapper-name--input, .popup_wrapper-name--tel {
+  outline: none;
+  border: 0.1rem solid #757575;
+  padding: 2rem;
   color: var(--black);
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
@@ -232,10 +237,9 @@
   font-weight: 400;
   line-height: normal;
 }
-.popup_wrapper-name--input {
-  outline: none;
+.popup_wrapper-name--input:focus, .popup_wrapper-name--tel:focus {
   border: 0.1rem solid #757575;
-  padding: 2rem;
+  box-shadow: none;
 }
 .popup_wrapper-send {
   gap: 1.5rem;
@@ -274,11 +278,26 @@
   width: 100% !important;
 }
 
-.iti__tel-input {
+.iti__tel-input,
+.iti__search-input {
   border: 0.1rem solid #757575;
   max-width: 100% !important;
   width: 100% !important;
   padding: 2rem;
+}
+.iti__tel-input:focus,
+.iti__search-input:focus {
+  border: 0.1rem solid #757575;
+}
+
+.iti__search-input {
+  color: var(--black);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1rem;
 }
 
 .iti__tel-input:focus {
@@ -460,8 +479,9 @@
   z-index: 1;
   transition: all 0.4s ease-in-out;
 }
-.adv_wrapper-card--bg:hover {
-  height: 0rem;
+
+.adv_wrapper-card--bg.visible {
+  height: 0%;
 }
 
 :root {

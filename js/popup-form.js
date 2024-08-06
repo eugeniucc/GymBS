@@ -27,14 +27,14 @@ closePopup.addEventListener("click", () => {
 const namePopup = document.getElementById("name");
 const sendPopup = document.querySelector(".popup_wrapper-send--btn");
 
-sendPopup.addEventListener("click", () => {
-  if (namePopup !== "") {
-    setTimeout(() => {
-      popup.classList.remove("active");
-      popupOverlay.classList.remove("active");
-    }, 2000);
-  }
-});
+// sendPopup.addEventListener("click", () => {
+//   if (namePopup !== "") {
+//     setTimeout(() => {
+//       popup.classList.remove("active");
+//       popupOverlay.classList.remove("active");
+//     }, 2000);
+//   }
+// });
 
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {

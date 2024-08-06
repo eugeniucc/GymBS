@@ -42,13 +42,18 @@
     &-name,
     &-phone {
       gap: 2rem;
-      @include p-16-black-normal;
     }
     &-name {
-      &--input {
+      &--input,
+      &--tel {
         outline: none;
         border: 0.1rem solid #757575;
         padding: 2rem;
+        @include p-16-black-normal;
+        &:focus {
+          border: 0.1rem solid #757575;
+          box-shadow: none;
+        }
       }
     }
     &-send {
@@ -72,11 +77,19 @@
   max-width: 100% !important;
   width: 100% !important;
 }
-.iti__tel-input {
+.iti__tel-input,
+.iti__search-input {
   border: 0.1rem solid #757575;
   max-width: 100% !important;
   width: 100% !important;
   padding: 2rem;
+  &:focus {
+    border: 0.1rem solid #757575;
+  }
+}
+.iti__search-input {
+  @include p-16-black-normal;
+  padding: 1rem;
 }
 .iti__tel-input:focus {
   outline: none;

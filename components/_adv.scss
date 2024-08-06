@@ -53,10 +53,11 @@
         background: rgba(231, 73, 15, 0.5);
         z-index: 1;
         transition: all 0.4s ease-in-out;
-        &:hover {
-          height: 0rem;
-        }
       }
     }
   }
+}
+
+.adv_wrapper-card--bg.visible {
+  height: 0%;
 }
