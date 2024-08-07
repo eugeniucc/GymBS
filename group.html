@@ -59,7 +59,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/form-validation.js"></script>
+    <script defer src="./js/form-validation-group.js"></script>
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -79,7 +79,7 @@
       href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/css/intlTelInput.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.0/build/js/intlTelInput.min.js"></script>
-    <script defer src="./js/form-validation.js"></script>
+    <script defer src="./js/form-validation-group.js"></script>
     <!-- FANCYBOX -->
     <link
       rel="stylesheet"
@@ -103,10 +103,20 @@
       crossorigin=""
     ></script>
     <script defer src="./js/map-gallery.js"></script>
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
     <!-- MY SCRIPTS -->
-    <script defer src="./js/banner.js"></script>
-    <script defer src="./js/cards.js"></script>
+    <script defer src="./js/swipers.js"></script>
     <script defer src="./js/popup-form.js"></script>
+    <script defer src="./js/cards.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -207,7 +217,7 @@
               <nav class="header_nav d-flex justify-content-end">
                 <ul class="header_nav-list d-flex">
                   <li class="header_nav-list--item">
-                    <a class="header_nav-list--link" href="#subscribe"
+                    <a class="header_nav-list--link" href="#fitness"
                       >Групповые программы</a
                     >
                   </li>
@@ -232,192 +242,145 @@
       </div>
     </header>
     <main class="main">
-      <section class="banner">
-        <div
-          class="banner_wrapper"
-          style="background-image: url(./img/banner.png)"
-        >
-          <div class="banner_overlay d-flex flex-column">
-            <h2 class="banner_overlay-title">
-              Более 20 различных групповых программ
-            </h2>
-            <div class="banner_overlay-text">
-              Огромный выбор групповых программ, которые проведут наши тренеры.
-              Современный зал и позитивная атмосфера принесет не только пользу,
-              но и доставит удовольствие от тренировок.
-            </div>
-          </div>
+      <section class="steps">
+        <div class="container">
+          <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb steps__breadcrumb">
+              <li class="breadcrumb-item">
+                <a class="steps__link" href="./index.html">Домой</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                <p class="steps__text">Групповые программы</p>
+              </li>
+            </ol>
+          </nav>
         </div>
       </section>
-      <section class="start">
-        <div class="container">
-          <div class="row d-flex">
-            <div class="col-lg-6">
-              <div class="start_wrapper d-flex flex-column">
-                <p class="start_wrapper-descr">о клубе</p>
-                <h1 class="start_wrapper-title">
-                  Начни свое преображение с Level Fitness
+      <section class="workout">
+        <div class="swiper workout__swiper">
+          <div class="swiper-wrapper workout__wrapper">
+            <div
+              class="swiper-slide workout__slide"
+              style="background-image: url(./img/banner.png)"
+            >
+              <div class="workout__content d-flex flex-column gap-4 mx-auto">
+                <h2 class="workout__title">
+                  Более 20 различных групповых программ
+                </h2>
+                <p class="workout__text">
+                  Огромный выбор групповых программ, которые проведут наши
+                  тренеры. Современный зал и позитивная атмосфера принексет
+                  пользу, и доставит удовольствие от тренировок.
+                </p>
+              </div>
+            </div>
+            <div
+              class="swiper-slide workout__slide"
+              style="background-image: url(./img/banner.png)"
+            >
+              <div class="workout__content d-flex flex-column gap-4 mx-auto">
+                <h1 class="workout__title">
+                  Более 20 различных групповых программ
                 </h1>
-                <p class="start_wrapper-text">
-                  Все групповые программы Level Fitness построенны на
-                  профессионализме, неравнодушии и чувстве прекрасного.
-                </p>
-                <p class="start_wrapper-text">
-                  Главная особенность — осознанные тренировки, основанные на
-                  глубоких знаниях человеческой биомеханики. Наш подход
-                  обеспечит не только красоту тела, но и здоровье.
+                <p class="workout__text">
+                  Огромный выбор групповых программ, которые проведут наши
+                  тренеры. Современный зал и позитивная атмосфера принексет
+                  пользу, и доставит удовольствие от тренировок.
                 </p>
               </div>
             </div>
-            <div class="col-lg-6 d-flex justify-content-end">
-              <div class="start_content">
-                <img
-                  class="start_img"
-                  src="./img/start.png"
-                  alt="Level Fitness"
-                />
-              </div>
+          </div>
+          <div class="swiper-button-next">
+            <div class="workout__arrow">
+              <i class="fa-solid fa-arrow-right" style="color: #ff740b"></i>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <div class="workout__arrow">
+              <i class="fa-solid fa-arrow-left" style="color: #ff740b"></i>
             </div>
           </div>
         </div>
       </section>
-      <section class="adv">
+      <section class="options">
         <div class="container">
+          <h1 class="options__title my-5 text-center">
+            Начни свое преображение с Level Fitness
+          </h1>
+          <div class="options__box d-flex flex-column gap-4 mb-5">
+            <p class="options__text">
+              Все групповые программы Level Fitness построенны на
+              профессионализме, неравнодушии и чувстве прекрасного.
+            </p>
+            <p class="options__text">
+              Главная особенность — осознанные тренировки, основанные на
+              глубоких знаниях человеческой биомеханики. Наш подход обеспечит не
+              только красоту тела, но и здоровье.
+            </p>
+          </div>
           <div class="row">
-            <div class="col-12">
-              <div class="adv_content d-flex flex-column gap-3">
-                <p class="adv_content-descr">почему мы</p>
-                <h2 class="adv_content-title">Наши преимущества</h2>
+            <div class="col-md-4 col-12">
+              <div class="options__card d-flex flex-column gap-4">
+                <p class="options__card-title">Топовые тренеры</p>
+                <p class="options__card-text">
+                  Для вас работают преподаватели имеющие в общей сумме более 10
+                  лет преподавательской практики, непрерывно совершенствующие
+                  свой уровень знаний.
+                </p>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-12">
-              <div class="adv_wrapper-card">
-                <div class="adv_wrapper-card--box">
-                  <img
-                    src="./img/adv1.png"
-                    alt="Level Fitness"
-                    class="adv_wrapper-card--img"
-                    loading="lazy"
-                  />
-                  <div
-                    class="adv_wrapper-card--number d-flex justify-content-center align-items-center"
-                  >
-                    <p class="adv_wrapper-card--number-text">1</p>
-                  </div>
-                  <div class="adv_wrapper-card--bg"></div>
-                </div>
-                <div class="adv_wrapper-card--content d-flex flex-column gap-4">
-                  <p class="adv_wrapper-card--title">Топовые тренери</p>
-                  <p class="adv_wrapper-card--text">
-                    Для вас работают преподаватели имеющие в общей сумме более
-                    10 лет преподавательской практики, непрерывно
-                    совершенствующие свой уровень знаний.
-                  </p>
-                </div>
+            <div class="col-md-4 col-12">
+              <div class="options__card d-flex flex-column gap-4">
+                <p class="options__card-title">Здоровье</p>
+                <p class="options__card-text">
+                  Мы помогаем обрести уверенность в себе, с помощью раскрытия
+                  таланта и развития физических возможностей. Поможем уйти
+                  блокам и зажатости. А взамен придет лёгкость. Гибкость тела и
+                  ума.
+                </p>
               </div>
             </div>
-            <div class="col-sm-4 col-12">
-              <div class="adv_wrapper-card">
-                <div class="adv_wrapper-card--box">
-                  <img
-                    src="./img/adv2.png"
-                    alt="Level Fitness"
-                    class="adv_wrapper-card--img"
-                    loading="lazy"
-                  />
-                  <div
-                    class="adv_wrapper-card--number d-flex justify-content-center align-items-center"
-                  >
-                    <p class="adv_wrapper-card--number-text">2</p>
-                  </div>
-                  <div class="adv_wrapper-card--bg"></div>
-                </div>
-                <div class="adv_wrapper-card--content d-flex flex-column gap-4">
-                  <p class="adv_wrapper-card--title">Улучшение здоровья</p>
-                  <p class="adv_wrapper-card--text">
-                    Мы помогаем обрести уверенность в себе, с помощью раскрытия
-                    таланта и развития физических возможностей. Поможем уйти
-                    блокам и зажатости. А взамен придет лёгкость, гибкость тела
-                    и ума.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="adv_wrapper-card">
-                <div class="adv_wrapper-card--box">
-                  <img
-                    src="./img/adv3.png"
-                    alt="Level Fitness"
-                    class="adv_wrapper-card--img"
-                    loading="lazy"
-                  />
-                  <div
-                    class="adv_wrapper-card--number d-flex justify-content-center align-items-center"
-                  >
-                    <p class="adv_wrapper-card--number-text">3</p>
-                  </div>
-                  <div class="adv_wrapper-card--bg"></div>
-                </div>
-                <div class="adv_wrapper-card--content d-flex flex-column gap-4">
-                  <p class="adv_wrapper-card--title">Насыщенное расписание</p>
-                  <p class="adv_wrapper-card--text">
-                    Возможность заниматься в любое время с 08:00 до 22:00
-                  </p>
-                </div>
+            <div class="col-md-4 col-12">
+              <div class="options__card d-flex flex-column gap-4">
+                <p class="options__card-title">Насыщенное расписание</p>
+                <p class="options__card-text">
+                  Возможность заниматься в любое время с 08:00 до 22:00
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="program">
+      <section class="fitness">
         <div class="container">
-          <div class="row d-flex">
-            <div class="col-lg-6">
-              <div class="program_wrapper d-flex flex-column">
-                <p class="program_wrapper-descr">как будем работать</p>
-                <h2 class="program_wrapper-title">Наши программы</h2>
-                <p class="program_wrapper-text">
-                  У нас широкий и сбалансированный выбор тренировок.
-                  Разнообразие нагрузок поможет комплексно развить тело и решить
-                  любые задачи.
-                </p>
-                <p class="program_wrapper-text">
-                  В основе всех тренировок — движение в трех плоскостяхдля
-                  наиболее эффективной и безопасной активации тела! Тренируйтесь
-                  в мини-группе или приходите на индивидуальные занятия.
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-end">
-              <div class="program_content">
-                <img
-                  class="program_img"
-                  src="./img/start.png"
-                  alt="Level Fitness"
-                />
-              </div>
-            </div>
+          <h3 class="fitness__title mb-5 text-center">Наши программы</h3>
+          <div class="fitness__wrapper d-flex flex-column gap-3">
+            <p class="fitness__text">
+              У нас широкий и сбалансированный выбор тренировок. Разнообразие
+              нагрузок поможет комплексно развить тело и решить любые задачи.
+            </p>
+            <p class="fitness__text">
+              В основе всех тренировок — движение в трех плоскостях для наиболее
+              эффективной и безопасной активации тела! Тренируйтесь в
+              мини-группе или приходите на индивидуальные занятия.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="subscribe" id="subscribe">
+
         <div class="container">
-          <div class="row subscribe_top">
+          <div class="row fitness_top">
             <div class="col-sm-4 col-12">
               <div
-                class="subscribe_card subscribe_card-corner-left d-flex flex-column gap-3"
+                class="fitness_card fitness_card-corner-left d-flex flex-column gap-3"
               >
                 <img
-                  class="subscribe_card-img"
+                  class="fitness_card-img"
                   src="./img/subscribe1.png"
                   alt="Level Fitness"
                   loading="lazy"
                 />
-                <h4 class="subscribe_card-title">HIIT-тренинг</h4>
-                <p class="subscribe_card-text">
+                <h4 class="fitness_card-title">HIIT-тренинг</h4>
+                <p class="fitness_card-text">
                   Тренировка на мышцы ног и ягодиц, с использованием резинок и
                   отягощения + 30 минут растяжка
                 </p>
@@ -425,15 +388,15 @@
               </div>
             </div>
             <div class="col-sm-4 col-12">
-              <div class="subscribe_card d-flex flex-column gap-3">
+              <div class="fitness_card d-flex flex-column gap-3">
                 <img
-                  class="subscribe_card-img"
+                  class="fitness_card-img"
                   src="./img/subscribe2.png"
                   alt="Level Fitness"
                   loading="lazy"
                 />
-                <h4 class="subscribe_card-title">Пилатес</h4>
-                <p class="subscribe_card-text">
+                <h4 class="fitness_card-title">Пилатес</h4>
+                <p class="fitness_card-text">
                   Тренировка на мышцы ног и ягодиц, с использованием резинок и
                   отягощения + 30 минут растяжка
                 </p>
@@ -441,15 +404,15 @@
               </div>
             </div>
             <div class="col-sm-4 col-12">
-              <div class="subscribe_card d-flex flex-column gap-3">
+              <div class="fitness_card d-flex flex-column gap-3">
                 <img
-                  class="subscribe_card-img"
+                  class="fitness_card-img"
                   src="./img/subscribe3.png"
                   alt="Level Fitness"
                   loading="lazy"
                 />
-                <h4 class="subscribe_card-title">Зумба</h4>
-                <p class="subscribe_card-text">
+                <h4 class="fitness_card-title">Зумба</h4>
+                <p class="fitness_card-text">
                   Тренировка на мышцы ног и ягодиц, с использованием резинок и
                   отягощения + 30 минут растяжка
                 </p>
@@ -457,17 +420,17 @@
               </div>
             </div>
           </div>
-          <div class="row subscribe_bot">
+          <div class="row fitness_bot">
             <div class="col-sm-4 col-12">
-              <div class="subscribe_card d-flex flex-column gap-3">
+              <div class="fitness_card d-flex flex-column gap-3">
                 <img
-                  class="subscribe_card-img"
+                  class="fitness_card-img"
                   src="./img/subscribe4.png"
                   alt="Level Fitness"
                   loading="lazy"
                 />
-                <h4 class="subscribe_card-title">Табата</h4>
-                <p class="subscribe_card-text">
+                <h4 class="fitness_card-title">Табата</h4>
+                <p class="fitness_card-text">
                   Тренировка на мышцы ног и ягодиц, с использованием резинок и
                   отягощения + 30 минут растяжка
                 </p>
@@ -475,15 +438,15 @@
               </div>
             </div>
             <div class="col-sm-4 col-12">
-              <div class="subscribe_card d-flex flex-column gap-3">
+              <div class="fitness_card d-flex flex-column gap-3">
                 <img
-                  class="subscribe_card-img"
+                  class="fitness_card-img"
                   src="./img/subscribe5.png"
                   alt="Level Fitness"
                   loading="lazy"
                 />
-                <h4 class="subscribe_card-title">Стретчинг</h4>
-                <p class="subscribe_card-text">
+                <h4 class="fitness_card-title">Стретчинг</h4>
+                <p class="fitness_card-text">
                   Тренировка на мышцы ног и ягодиц, с использованием резинок и
                   отягощения + 30 минут растяжка
                 </p>
@@ -492,230 +455,21 @@
             </div>
             <div class="col-sm-4 col-12">
               <div
-                class="subscribe_card subscribe_card-corner-right d-flex flex-column gap-3"
+                class="fitness_card fitness_card-corner-right d-flex flex-column gap-3"
               >
                 <img
-                  class="subscribe_card-img"
+                  class="fitness_card-img"
                   src="./img/subscribe1.png"
                   alt="Level Fitness"
                   loading="lazy"
                 />
-                <h4 class="subscribe_card-title">HIT-тренинг</h4>
-                <p class="subscribe_card-text">
+                <h4 class="fitness_card-title">HIT-тренинг</h4>
+                <p class="fitness_card-text">
                   Тренировка на мышцы ног и ягодиц, с использованием резинок и
                   отягощения + 30 минут растяжка
                 </p>
                 <button class="subscribe_card-btn">Записаться</button>
               </div>
-            </div>
-          </div>
-          <a
-            class="subscribe_btn d-block mx-auto text-center"
-            href="./group.html"
-            target="_blank"
-          >
-            Посмотреть все программы
-          </a>
-        </div>
-      </section>
-      <section class="lesson">
-        <h3 class="lesson__title">Запишитесь на первое бесплатное занятие</h3>
-        <div class="container">
-          <form action="#" class="form__lesson needs-validation" novalidate>
-            <div class="row d-flex">
-              <div
-                class="col-md-4 col-12 popup_wrapper-name d-flex flex-column"
-              >
-                <p class="popup_wrapper-name--text">Имя</p>
-                <input
-                  class="popup_wrapper-name--input form-control"
-                  type="text"
-                  placeholder="Например Алина"
-                  id="name"
-                  required
-                />
-              </div>
-              <div
-                class="col-md-4 col-12 popup_wrapper-phone d-flex flex-column"
-              >
-                <p class="popup_wrapper-phone--text">Номер телефона</p>
-                <input
-                  class="iti__tel-input form-control popup_wrapper-name--tel"
-                  id="phone2"
-                  type="tel"
-                  required
-                />
-              </div>
-              <div
-                class="col-md-4 col-12 popup_wrapper-send d-flex popup_wrapper-send--lesson"
-              >
-                <button
-                  class="popup_wrapper-send--btn d-flex align-self-end"
-                  type="submit"
-                >
-                  <p class="popup_wrapper-send--text mx-auto">
-                    Записаться на тренировку
-                  </p>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-      <section class="trainers" id="trainers">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-sm-4 col-12">
-              <div class="trainers__wrapper d-flex flex-column gap-5">
-                <img
-                  class="trainers__wrapper-img"
-                  src="./img/trainer1.png"
-                  alt="Иванов Андрей"
-                  loading="lazy"
-                />
-                <h3 class="trainers__wrapper-title">Иванов Андрей</h3>
-                <p class="trainers__wrapper-text">
-                  Мастер спорта. Специалист. Профессионал. Красавчик.
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="trainers__wrapper d-flex flex-column gap-5">
-                <img
-                  class="trainers__wrapper-img"
-                  src="./img/trainer2.png"
-                  alt="Варламова Екатерина"
-                  loading="lazy"
-                />
-                <h3 class="trainers__wrapper-title">Варламова Екатерина</h3>
-                <p class="trainers__wrapper-text">
-                  Мастер спорта. Специалист. Профессионал. Красавчик.
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="trainers__wrapper d-flex flex-column gap-5">
-                <img
-                  class="trainers__wrapper-img"
-                  src="./img/trainer3.png"
-                  alt="Иванов Андрей"
-                  loading="lazy"
-                />
-                <h3 class="trainers__wrapper-title">Петров Николай</h3>
-                <p class="trainers__wrapper-text">
-                  Мастер спорта. Специалист. Профессионал. Красавчик.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 col-12">
-              <div class="trainers__wrapper d-flex flex-column gap-5">
-                <img
-                  class="trainers__wrapper-img"
-                  src="./img/trainer1.png"
-                  alt="Иванов Андрей"
-                  loading="lazy"
-                />
-                <h3 class="trainers__wrapper-title">Иванов Андрей</h3>
-                <p class="trainers__wrapper-text">
-                  Мастер спорта. Специалист. Профессионал. Красавчик.
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="trainers__wrapper d-flex flex-column gap-5">
-                <img
-                  class="trainers__wrapper-img"
-                  src="./img/trainer2.png"
-                  alt="Варламова Екатерина"
-                  loading="lazy"
-                />
-                <h3 class="trainers__wrapper-title">Варламова Екатерина</h3>
-                <p class="trainers__wrapper-text">
-                  Мастер спорта. Специалист. Профессионал. Красавчик.
-                </p>
-              </div>
-            </div>
-            <div class="col-sm-4 col-12">
-              <div class="trainers__wrapper d-flex flex-column gap-5">
-                <img
-                  class="trainers__wrapper-img"
-                  src="./img/trainer3.png"
-                  alt="Иванов Андрей"
-                  loading="lazy"
-                />
-                <h3 class="trainers__wrapper-title">Петров Николай</h3>
-                <p class="trainers__wrapper-text">
-                  Мастер спорта. Специалист. Профессионал. Красавчик.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="interior" id="interior">
-        <div class="container">
-          <div class="interior__wrapper d-flex flex-column gap-4">
-            <p class="interior__descr">приглашаем в гости</p>
-            <h3 class="interior__title">Интерьер в фитнес-центре</h3>
-          </div>
-          <div class="row pb-4">
-            <div class="col-sm-4">
-              <a data-fancybox="gallery" href="./img/interior1.png">
-                <img
-                  src="./img/interior1.png"
-                  class="interior__img"
-                  alt="Level Fitness"
-                />
-              </a>
-            </div>
-            <div class="col-sm-4">
-              <a data-fancybox="gallery" href="./img/interior2.png">
-                <img
-                  src="./img/interior2.png"
-                  class="interior__img"
-                  alt="Level Fitness"
-                />
-              </a>
-            </div>
-            <div class="col-sm-4">
-              <a data-fancybox="gallery" href="./img/interior3.png">
-                <img
-                  src="./img/interior3.png"
-                  class="interior__img"
-                  alt="Level Fitness"
-                />
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4">
-              <a data-fancybox="gallery" href="./img/interior4.png">
-                <img
-                  src="./img/interior4.png"
-                  class="interior__img"
-                  alt="Level Fitness"
-                />
-              </a>
-            </div>
-            <div class="col-sm-4">
-              <a data-fancybox="gallery" href="./img/interior5.png">
-                <img
-                  src="./img/interior5.png"
-                  class="interior__img"
-                  alt="Level Fitness"
-                />
-              </a>
-            </div>
-            <div class="col-sm-4">
-              <a data-fancybox="gallery" href="./img/interior6.png">
-                <img
-                  src="./img/interior6.png"
-                  class="interior__img"
-                  alt="Level Fitness"
-                />
-              </a>
             </div>
           </div>
         </div>

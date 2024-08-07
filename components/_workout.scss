@@ -1,0 +1,35 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.workout {
+  &__wrapper {
+    height: 50rem;
+  }
+  &__slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &__content {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5rem 9rem;
+  }
+  &__title {
+    @include section-title-white;
+  }
+  &__text {
+    @include p-18-white-normal;
+  }
+  &__arrow {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+  }
+}

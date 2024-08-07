@@ -1,0 +1,20 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.interior {
+  padding: 7.5rem 0rem 12rem 0rem;
+  background-color: var(--white);
+  &__wrapper {
+    margin-bottom: 6rem;
+  }
+  &__descr {
+    @include section-descr-orange;
+  }
+  &__title {
+    @include section-title-black;
+  }
+  &__img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

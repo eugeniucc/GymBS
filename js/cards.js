@@ -1,23 +1,10 @@
-// BANNER
-
-const bannerWrapper = document.querySelector(".banner_wrapper");
-const bannerOverlay = document.querySelector(".banner_overlay");
-
-bannerWrapper.addEventListener("mouseenter", () => {
-  bannerOverlay.classList.add("active");
-});
-bannerWrapper.addEventListener("mouseleave", () => {
-  bannerOverlay.classList.remove("active");
-});
-
-// CARDS
+// ADV CARDS
 
 const cardBox = document.querySelectorAll(".adv_wrapper-card--box");
 const cardBg = document.querySelectorAll(".adv_wrapper-card--bg");
 
 const arrCardBg = [...cardBg];
 const arrCardBox = [...cardBox];
-console.log(arrCardBox);
 
 arrCardBg.forEach((el) => {
   el.addEventListener("mouseenter", () => {
@@ -32,5 +19,17 @@ arrCardBox.forEach((box) => {
         bg.classList.remove("visible");
       }
     });
+  });
+});
+
+// PROGRAM CARDS
+
+const programCards = document.querySelectorAll(".subscribe_card-btn");
+const arrProgramCards = [...programCards];
+
+arrProgramCards.forEach((card) => {
+  card.addEventListener("click", () => {
+    popup.classList.add("active");
+    popupOverlay.classList.add("active");
   });
 });

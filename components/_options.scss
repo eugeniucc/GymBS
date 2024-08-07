@@ -1,0 +1,23 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.options {
+  padding: 6rem 0rem;
+  &__title {
+    @include section-title-black;
+  }
+  &__text {
+    @include p-16-black-normal;
+  }
+  &__card {
+    &-title {
+      @include p-18-black-normal;
+      font-weight: 700;
+    }
+    &-text {
+      @include p-16-black-normal;
+      max-width: 30rem;
+      width: 100%;
+    }
+  }
+}

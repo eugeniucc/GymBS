@@ -1,0 +1,23 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.fitness {
+  padding: 6rem 0rem;
+  &__title {
+    @include section-title-black;
+  }
+  &__text {
+    @include p-16-black-normal;
+  }
+  &_top {
+    margin: 6rem 0rem;
+  }
+  &_card {
+    &-title {
+      @include p-28-black-bold;
+    }
+    &-text {
+      @include p-16-black-normal;
+    }
+  }
+}

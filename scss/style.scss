@@ -4,6 +4,16 @@
 @import "../components/popup";
 @import "../components/start";
 @import "../components/adv";
+@import "../components/program";
+@import "../components/subscribe";
+@import "../components/lesson";
+@import "../components/trainers";
+@import "../components/interior";
+@import "../components/footer";
+@import "../components/workout";
+@import "../components/steps";
+@import "../components/options";
+@import "../components/fitness";
 
 // MEDIA QUERIES COMPONENTS
 @import "../media-queries/media-header";
@@ -11,6 +21,16 @@
 @import "../media-queries/media-popup";
 @import "../media-queries/media-start";
 @import "../media-queries/media-adv";
+@import "../media-queries/media-program";
+@import "../media-queries/media-subscribe";
+@import "../media-queries/media-lesson";
+@import "../media-queries/media-trainers";
+@import "../media-queries/media-interior";
+@import "../media-queries/media-footer";
+@import "../media-queries/media-workout";
+@import "../media-queries/media-steps";
+@import "../media-queries/media-options";
+@import "../media-queries/media-fitness";
 
 // MIXINS
 @import "../scss/mixins/mixins";

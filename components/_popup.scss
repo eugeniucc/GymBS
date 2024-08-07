@@ -73,6 +73,9 @@
       &--text {
         @include p-16-black-normal;
       }
+      &--lesson {
+        height: 10.2rem;
+      }
     }
   }
 }

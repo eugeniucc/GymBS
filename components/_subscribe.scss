@@ -1,0 +1,90 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.subscribe {
+  position: relative;
+  padding: 6rem 0rem 20rem 0rem;
+  background-color: var(--backgounrd);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  &_top {
+    margin-bottom: 2rem;
+  }
+  &_bot {
+    margin-bottom: 8rem;
+  }
+  &_card {
+    padding: 3rem 2rem;
+    background-color: var(--background-card-program);
+    &-corner-left,
+    &-corner-right {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+      }
+      &::before {
+        position: absolute;
+        content: "";
+      }
+    }
+    &-corner-left::after {
+      top: 0;
+      left: 0;
+      width: 16.5rem;
+      height: 0.1rem;
+      background-color: var(--orange);
+    }
+    &-corner-left::before {
+      top: 0;
+      left: 0;
+      width: 0.1rem;
+      height: 16.5rem;
+      background-color: var(--orange);
+    }
+    &-corner-right::after {
+      top: 0;
+      right: 0;
+      width: 16.5rem;
+      height: 0.1rem;
+      background-color: var(--orange);
+    }
+    &-corner-right::before {
+      top: 0;
+      right: 0;
+      width: 0.1rem;
+      height: 16.5rem;
+      background-color: var(--orange);
+    }
+    &-title {
+      margin-top: 1rem;
+      @include p-24-white-bold;
+    }
+    &-text {
+      margin-top: 0.5rem;
+      @include p-16-gray-normal;
+    }
+    &-btn {
+      @include btn-orange;
+      margin-top: 1.5rem;
+      background: transparent;
+      border: 0.1rem solid var(--orange);
+      transition: all 0.4s ease-in-out;
+      padding: 1.2rem 0rem;
+      &:hover {
+        background-color: var(--orange);
+        color: var(--white);
+      }
+    }
+    &-img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &_btn {
+    @include btn-orange;
+    @include header-btn;
+    max-width: 35rem;
+    width: 100%;
+    padding: 1.2rem 0rem;
+  }
+}

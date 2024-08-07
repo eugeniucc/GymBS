@@ -1,0 +1,22 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.trainers {
+  padding: 15rem 0rem 6rem 0rem;
+  background-color: var(--backgounrd);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  &__wrapper {
+    padding: 3rem 2rem;
+    border: 0.1rem solid transparent;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      border: 0.1rem solid var(--orange);
+    }
+    &-title {
+      @include p-24-white-bold;
+    }
+    &-text {
+      @include p-16-gray-normal;
+    }
+  }
+}

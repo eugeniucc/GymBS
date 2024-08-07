@@ -1,11 +1,11 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
-.start {
+.program {
   padding: 12rem 0rem;
   background-color: var(--backgounrd);
   &_wrapper {
-    padding-top: 11.3rem;
+    padding-bottom: 17.3rem;
     gap: 1rem;
     &-descr {
       @include section-descr-orange;

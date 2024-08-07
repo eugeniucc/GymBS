@@ -1,0 +1,42 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.footer {
+  padding: 12rem 0rem 4rem 0rem;
+  background-color: var(--backgounrd);
+  &__list {
+    padding: 9.2rem 6rem;
+  }
+  &__text {
+    @include p-18-white-normal;
+    &-descr {
+      @include p-16-gray-normal;
+    }
+    &-copyright {
+      @include p-16-gray-normal;
+    }
+  }
+  &__link {
+    @include p-18-white-normal;
+  }
+  &__row {
+    border: 0.1rem solid var(--orange);
+    margin-bottom: 4rem;
+  }
+  &__col {
+    padding-right: 0;
+  }
+}
+
+#map {
+  height: 100%;
+  z-index: 1;
+}
+.leaflet-control-attribution,
+.leaflet-control-zoom {
+  display: none;
+}
+.leaflet-popup-content strong {
+  font-size: 1.6rem;
+  font-weight: bold;
+}

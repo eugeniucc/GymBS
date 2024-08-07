@@ -7,15 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const input = document.querySelector("#phone2");
-  const iti = intlTelInput(input, {
-    utilsScript:
-      "https://cdn.jsdelivr.net/npm/intl-tel-input/build/js/utils.js",
-    initialCountry: "ru",
-  });
-});
-
 (function () {
   "use strict";
 

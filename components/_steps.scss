@@ -1,0 +1,29 @@
+@import "../scss/mixins/mixins";
+@import "../scss/variables/variables";
+
+.steps {
+  background-color: var(--backgounrd);
+  &__link {
+    @include p-12-gray-normal;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: var(--orange);
+    }
+  }
+  &__text {
+    width: 15rem;
+    @include p-12-gray-normal;
+  }
+  &__breadcrumb {
+    margin-bottom: 0;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-size: 2rem;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
