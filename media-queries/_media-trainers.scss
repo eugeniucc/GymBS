@@ -1,2 +1,13 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .trainers {
+    padding: 15rem 0rem 5rem 0rem;
+  }
+}
+@media (max-width: $sm) {
+  .trainers {
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0% 100%);
+  }
+}

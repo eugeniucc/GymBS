@@ -1,2 +1,16 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .lesson {
+    padding: 5rem 0rem;
+    &__title {
+      font-size: 2.6rem;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .popup_wrapper-send--text {
+    font-size: 1.3rem;
+  }
+}

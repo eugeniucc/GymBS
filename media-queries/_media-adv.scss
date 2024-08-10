@@ -1,2 +1,36 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .adv {
+    padding: 5rem 0rem;
+    &_content {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .adv {
+    &_wrapper {
+      &-card {
+        &--number {
+          width: 10.4rem;
+          height: 10.4rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .adv {
+    &_wrapper {
+      &-card {
+        &--number {
+          width: 8.4rem;
+          height: 8.4rem;
+        }
+      }
+    }
+  }
+}

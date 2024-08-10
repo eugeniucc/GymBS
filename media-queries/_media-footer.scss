@@ -1,2 +1,38 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: 1140px) {
+  .footer {
+    padding: 5rem 1.4rem;
+  }
+}
+
+@media (max-width: $lg) {
+  #map {
+    height: 45rem;
+  }
+  .footer {
+    &__list {
+      padding: 5rem 0rem;
+      align-items: center;
+    }
+    &__col {
+      padding: 0;
+    }
+    &__text {
+      &-descr {
+        text-align: center;
+        max-width: 35rem;
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .footer {
+    padding: 5rem 1.6rem 2rem 1.6rem;
+    &__row {
+      margin-bottom: 2rem;
+    }
+  }
+}

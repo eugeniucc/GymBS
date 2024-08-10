@@ -1,2 +1,21 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .header {
+    &_social {
+      margin: 0 auto;
+      justify-content: center;
+      flex-direction: unset !important;
+      align-items: center;
+      &-map {
+        text-wrap: nowrap;
+        margin: 3rem 0rem;
+      }
+    }
+    &_contacts {
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+}

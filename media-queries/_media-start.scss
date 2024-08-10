@@ -1,2 +1,16 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .start {
+    padding: 5rem 0rem;
+    &_wrapper {
+      padding-top: 0;
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+    &_col-img {
+      justify-content: center !important;
+    }
+  }
+}

@@ -1,2 +1,24 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+
+@media (max-width: $lg) {
+  .interior {
+    padding: 5rem 0rem;
+    &__wrapper {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: $sm) {
+  .row__interior-desktop {
+    display: none;
+  }
+  .row__interior-mobile {
+    display: block;
+  }
+  .interior__img-mobile {
+    max-width: 100%;
+    width: 100%;
+  }
+}

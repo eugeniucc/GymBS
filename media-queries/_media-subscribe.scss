@@ -1,2 +1,22 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $lg) {
+  .subscribe {
+    padding: 5rem 0rem 12rem 0rem;
+  }
+}
+@media (max-width: $md) {
+  .subscribe {
+    &_card {
+      &-title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .subscribe {
+    clip-path: polygon(0 0, 100% 0, 100% 98%, 0% 100%);
+  }
+}

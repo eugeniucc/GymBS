@@ -1,5 +1,46 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
 
+@media (max-width: 1330px) {
+  .banner {
+    &_overlay {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 1010px) {
+  .banner {
+    &_overlay {
+      width: 90%;
+    }
+  }
+}
 @media (max-width: $lg) {
+  .banner {
+    &_wrapper {
+      background-size: cover;
+    }
+    &_overlay {
+      max-width: 100%;
+      width: 100%;
+      align-items: flex-end;
+      padding-right: 2rem;
+    }
+  }
+}
+@media (max-width: $md) {
+  .banner {
+    &_wrapper {
+      height: 45rem;
+    }
+    &_overlay {
+      &-title {
+        font-size: 3rem;
+        max-width: 35rem;
+      }
+      &-text {
+        max-width: 35rem;
+      }
+    }
+  }
 }
