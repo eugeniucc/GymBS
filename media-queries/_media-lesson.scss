@@ -14,3 +14,11 @@
     font-size: 1.3rem;
   }
 }
+
+@media (max-width: $md) {
+  .lesson {
+    &__title {
+      margin-bottom: 3rem;
+    }
+  }
+}
