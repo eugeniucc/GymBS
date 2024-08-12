@@ -14,3 +14,25 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .row__custom-start--mobile {
+    flex-direction: column-reverse;
+  }
+  .start {
+    &_wrapper {
+      text-align: left;
+      padding: 0rem 0.75rem;
+      margin-bottom: 0;
+    }
+    &_content {
+      padding: 0rem 0.75rem;
+      &::after {
+        right: 0;
+        bottom: 0;
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+  }
+}

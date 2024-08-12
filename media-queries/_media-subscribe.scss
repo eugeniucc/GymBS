@@ -18,5 +18,22 @@
 @media (max-width: $sm) {
   .subscribe {
     clip-path: polygon(0 0, 100% 0, 100% 98%, 0% 100%);
+    &_card {
+      margin: 0rem 0.75rem;
+    }
+    &_btn {
+      max-width: 100%;
+      width: 100%;
+      &--wrapper {
+        margin: 0rem 0.75rem;
+      }
+    }
+  }
+  .subscribe_top,
+  .subscribe_bot {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-bottom: 4rem;
   }
 }

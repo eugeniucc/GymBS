@@ -5,6 +5,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  @media (max-width: $sm) {
+    font-size: 2.6rem;
+  }
 }
 @mixin section-title-black {
   color: var(--black);
@@ -13,6 +16,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  @media (max-width: $sm) {
+    font-size: 2.6rem;
+  }
 }
 @mixin section-descr-orange {
   color: var(--orange);
@@ -31,6 +37,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 2.6rem;
+}
+@mixin p-20-white-normal {
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
 }
 @mixin p-18-black-normal {
   color: var(--black);
@@ -87,6 +100,15 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
+}
+@mixin p-28-white-bold {
+  color: var(--white);
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
 }
 @mixin header-btn-text {
   color: var(--white);

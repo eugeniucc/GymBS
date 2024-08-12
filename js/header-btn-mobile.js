@@ -26,3 +26,12 @@ arrMobileLinks.forEach((el) => {
     }
   });
 });
+
+// MOBILE POPUP
+
+const mobileShowPopup = document.getElementById("header__subscribe-mobile");
+
+mobileShowPopup.addEventListener("click", () => {
+  popup.classList.add("active");
+  popupOverlay.classList.add("active");
+});

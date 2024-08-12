@@ -22,3 +22,14 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .lesson {
+    &__title {
+      padding: 0rem 0.75rem;
+    }
+  }
+  .row__lesson-custom {
+    padding: 0rem 0.75rem;
+  }
+}

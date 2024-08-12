@@ -73,6 +73,15 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@300..800&display=swap"
       rel="stylesheet"
     />
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
     <!-- intl-tel-input -->
     <link
       rel="stylesheet"
@@ -108,6 +117,7 @@
     <script defer src="./js/cards.js"></script>
     <script defer src="./js/popup-form.js"></script>
     <script defer src="./js/header-btn-mobile.js"></script>
+    <script defer src="./js/swipers.js"></script>
     <!-- MY STYLES -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/min_css/style.min.css" />
@@ -259,7 +269,7 @@
               </button>
             </div>
             <div class="col-5 d-flex gap-4 justify-content-end">
-              <a href="" class="header__mobile-link" target="_blank">
+              <a href="tel:+78632727277" class="header__mobile-link">
                 <span class="header__mobile-span"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -275,7 +285,7 @@
                   </svg>
                 </span>
               </a>
-              <a href="" class="header__mobile-link" target="_blank">
+              <a href="#" class="header__mobile-link" target="_blank">
                 <span class="header__mobile-span"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -299,7 +309,11 @@
                   </svg>
                 </span>
               </a>
-              <a href="" class="header__mobile-link" target="_blank">
+              <a
+                href="https://maps.app.goo.gl/6yhsLiHuKpCy6eAi7"
+                class="header__mobile-link"
+                target="_blank"
+              >
                 <span class="header__mobile-span"
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -316,6 +330,13 @@
                 </span>
               </a>
             </div>
+            <button
+              class="header_subscribe mt-5"
+              type="button"
+              id="header__subscribe-mobile"
+            >
+              На тренировку
+            </button>
           </div>
         </div>
       </div>
@@ -323,7 +344,7 @@
     <main class="main">
       <section class="banner">
         <div
-          class="banner_wrapper"
+          class="banner_wrapper d-none d-sm-block"
           style="background-image: url(./img/banner.png)"
         >
           <div class="banner_overlay d-flex flex-column">
@@ -337,10 +358,98 @@
             </div>
           </div>
         </div>
+        <div class="banner__swiper-wrapper d-block d-sm-none">
+          <div class="swiper banner__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide banner__swiper-slide">
+                <img
+                  class="banner__img w-100"
+                  src="./img/banner-mobile.png"
+                  alt="Девушка с гантелями в руках"
+                  loading="eager"
+                />
+
+                <div class="banner__box-mobile d-flex flex-column gap-3">
+                  <h2 class="banner__title-mobile">
+                    Более
+                    <span class="banner__title-mobile--span d-inline">20</span>
+                    различных групповых программ
+                  </h2>
+                  <p class="banner__text-mobile">
+                    Огромный выбор групповых программ, которые проведут наши
+                    тренеры. Современный зал и позитивная атмосфера принесет не
+                    только пользу, но и доставит удовольствие от тренировок.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide banner__swiper-slide">
+                <img
+                  class="banner__img w-100"
+                  src="./img/banner-mobile.png"
+                  alt="Девушка с гантелями в руках"
+                  loading="lazy"
+                />
+                <div class="banner__box-mobile d-flex flex-column gap-3">
+                  <h2 class="banner__title-mobile">
+                    Более
+                    <span class="banner__title-mobile--span d-inline">20</span>
+                    различных групповых программ
+                  </h2>
+                  <p class="banner__text-mobile">
+                    Огромный выбор групповых программ, которые проведут наши
+                    тренеры. Современный зал и позитивная атмосфера принесет не
+                    только пользу, но и доставит удовольствие от тренировок.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide banner__swiper-slide">
+                <img
+                  class="banner__img w-100"
+                  src="./img/banner-mobile.png"
+                  alt="Девушка с гантелями в руках"
+                  loading="lazy"
+                />
+                <div class="banner__box-mobile d-flex flex-column gap-3">
+                  <h2 class="banner__title-mobile">
+                    Более
+                    <span class="banner__title-mobile--span d-inline">20</span>
+                    различных групповых программ
+                  </h2>
+                  <p class="banner__text-mobile">
+                    Огромный выбор групповых программ, которые проведут наши
+                    тренеры. Современный зал и позитивная атмосфера принесет не
+                    только пользу, но и доставит удовольствие от тренировок.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide banner__swiper-slide">
+                <img
+                  class="banner__img w-100"
+                  src="./img/banner-mobile.png"
+                  alt="Девушка с гантелями в руках"
+                  loading="lazy"
+                />
+                <div class="banner__box-mobile d-flex flex-column gap-3">
+                  <h2 class="banner__title-mobile">
+                    Более
+                    <span class="banner__title-mobile--span d-inline">20</span>
+                    различных групповых программ
+                  </h2>
+                  <p class="banner__text-mobile">
+                    Огромный выбор групповых программ, которые проведут наши
+                    тренеры. Современный зал и позитивная атмосфера принесет не
+                    только пользу, но и доставит удовольствие от тренировок.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
       <section class="start">
         <div class="container">
-          <div class="row d-flex">
+          <div class="row d-flex row__custom-start--mobile">
             <div class="col-lg-6">
               <div class="start_wrapper d-flex flex-column">
                 <p class="start_wrapper-descr">о клубе</p>
@@ -452,7 +561,7 @@
                 </div>
                 <div class="adv_wrapper-card--content d-flex flex-column gap-4">
                   <p class="adv_wrapper-card--title">Насыщенное расписание</p>
-                  <p class="adv_wrapper-card--text">
+                  <p class="adv_wrapper-card--text mb-0">
                     Возможность заниматься в любое время с 08:00 до 22:00
                   </p>
                 </div>
@@ -463,7 +572,7 @@
       </section>
       <section class="program" id="program">
         <div class="container">
-          <div class="row d-flex">
+          <div class="row d-flex row__program-custom">
             <div class="col-lg-6">
               <div class="program_wrapper d-flex flex-column">
                 <p class="program_wrapper-descr">как будем работать</p>
@@ -600,20 +709,22 @@
               </div>
             </div>
           </div>
-          <a
-            class="subscribe_btn d-block mx-auto text-center"
-            href="./group.html"
-            target="_blank"
-          >
-            Посмотреть все программы
-          </a>
+          <div class="subscribe_btn--wrapper">
+            <a
+              class="subscribe_btn d-block mx-auto text-center"
+              href="./group.html"
+              target="_blank"
+            >
+              Посмотреть все программы
+            </a>
+          </div>
         </div>
       </section>
       <section class="lesson">
         <h3 class="lesson__title">Запишитесь на первое бесплатное занятие</h3>
         <div class="container">
           <form action="#" class="form__lesson needs-validation" novalidate>
-            <div class="row d-flex">
+            <div class="row d-flex row__lesson-custom">
               <div
                 class="col-md-4 col-12 popup_wrapper-name d-flex flex-column"
               >

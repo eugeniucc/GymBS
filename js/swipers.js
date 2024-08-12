@@ -1,3 +1,11 @@
+// INDEX HTML SWIPER
+
+var swiper = new Swiper(".banner__swiper", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 // GROUP HTML SWIPER
 
 var swiper = new Swiper(".workout__swiper", {

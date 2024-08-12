@@ -1,2 +1,11 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $sm) {
+  .options {
+    padding: 5rem 0rem;
+    &__title {
+      margin-top: 0 !important;
+    }
+  }
+}

@@ -22,3 +22,28 @@
     }
   }
 }
+
+@media (max-width: $sm) {
+  .row__program-custom {
+    flex-direction: column-reverse;
+  }
+  .program {
+    padding: 5rem 0rem 0rem 0rem;
+    &_content {
+      padding: 0rem 0.75rem;
+      margin-bottom: 3rem;
+      &::after {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    &_wrapper {
+      text-align: left;
+      padding: 0rem 0.75rem;
+    }
+    &_img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}

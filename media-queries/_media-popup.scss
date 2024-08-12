@@ -1,2 +1,13 @@
 @import "../scss/mixins/mixins";
 @import "../scss/variables/variables";
+
+@media (max-width: $sm) {
+  .popup {
+    padding: 0rem 1.6rem;
+    height: 60rem;
+    top: 40%;
+    &_wrapper {
+      padding: 1.6rem;
+    }
+  }
+}

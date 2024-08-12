@@ -26,9 +26,29 @@
   .adv {
     &_wrapper {
       &-card {
+        padding: 0rem 0.75rem;
         &--number {
           width: 8.4rem;
           height: 8.4rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $sm) {
+  .adv {
+    &_content {
+      text-align: left;
+      margin-bottom: 4rem;
+      &-descr,
+      &-title {
+        padding: 0rem 0.75rem;
+      }
+    }
+    &_wrapper {
+      &-card {
+        &--text {
+          margin-bottom: 3rem;
         }
       }
     }
