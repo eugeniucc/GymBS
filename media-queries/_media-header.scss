@@ -131,6 +131,9 @@
 // HEADER SWIPER MOBILE
 
 .banner {
+  &__swiper {
+    background-color: black;
+  }
   &__swiper-slide {
     background-color: var(--backgounrd);
   }
