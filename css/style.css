@@ -1277,22 +1277,17 @@
 
 @media (max-width: 500px) {
   .mobile__menu {
-    top: 11%;
+    top: 14rem;
   }
 }
-@media (max-width: 465px) {
+@media (max-width: 455px) {
   .mobile__menu {
-    top: 10%;
+    top: 12rem;
   }
 }
-@media (max-width: 440px) {
+@media (max-width: 370px) {
   .mobile__menu {
-    top: 9%;
-  }
-}
-@media (max-width: 380px) {
-  .mobile__menu {
-    top: 8%;
+    top: 11rem;
   }
 }
 .banner__swiper-slide {
